@@ -1,4 +1,4 @@
-# Using OpenShift Dev Spaces for AI / ML Development
+# OpenShift Dev Spaces for AI / ML
 
 This repo demos helps show the value of OpenShift and OpenShift Dev Spaces as a platform for developing and deploying AI / ML workloads in a hybrid cloud.
 
