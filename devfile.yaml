@@ -8,18 +8,18 @@ projects:
         origin: "https://github.com/redhat-na-ssa/datasci-keras-gpt2-nlp.git"
       checkoutFrom:
         revision: main
-  - name: datasci-computer-vision
-    git:
-      remotes:
-        origin: "https://github.com/redhat-na-ssa/flyingthings.git"
-      checkoutFrom:
-        revision: main
-  - name: datasci-fingerprint
-    git:
-      remotes:
-        origin: "https://github.com/redhat-na-ssa/datasci-fingerprint.git"
-      checkoutFrom:
-        revision: main
+  # - name: datasci-computer-vision
+  #   git:
+  #     remotes:
+  #       origin: "https://github.com/redhat-na-ssa/flyingthings.git"
+  #     checkoutFrom:
+  #       revision: main
+  # - name: datasci-fingerprint
+  #   git:
+  #     remotes:
+  #       origin: "https://github.com/redhat-na-ssa/datasci-fingerprint.git"
+  #     checkoutFrom:
+  #       revision: main
 components:
   - container:
       # image: image-registry.openshift-image-registry.svc:5000/registry/udi-cuda:latest
