@@ -93,4 +93,7 @@ Data Science Examples
 - [Data Science Example - Fingerprint Prediction](https://github.com/redhat-na-ssa/datasci-fingerprint)
 - [Data Science Example - Computer Vision](https://github.com/redhat-na-ssa/flyingthings)
 - [Data Science Example - Keras GPT2 NLP](https://github.com/redhat-na-ssa/demo-ocp-gpt2-keras-nlp)
-- [Data Science Example - LLM on custom data source](https://github.com/redhat-na-ssa/demo-ai-weaviate)
+
+Other Examples
+
+- [OpenShift - LLM using custom data source](https://github.com/redhat-na-ssa/demo-ai-weaviate)
