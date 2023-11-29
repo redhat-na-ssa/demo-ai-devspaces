@@ -88,8 +88,9 @@ OpenShift Dev Spaces
 - [OpenShift Dev Spaces - Official Docs](https://access.redhat.com/documentation/en-us/red_hat_openshift_dev_spaces/3.9)
 - [Configure Dev Spaces with Auth](https://eclipse.dev/che/docs/stable/end-user-guide/using-a-git-provider-access-token/)
 
-Data Sets
+Data Science Examples
 
 - [Data Science Example - Fingerprint Prediction](https://github.com/redhat-na-ssa/datasci-fingerprint)
 - [Data Science Example - Computer Vision](https://github.com/redhat-na-ssa/flyingthings)
 - [Data Science Example - Keras GPT2 NLP](https://github.com/redhat-na-ssa/demo-ocp-gpt2-keras-nlp)
+- [Data Science Example - LLM on custom data source](https://github.com/redhat-na-ssa/demo-ai-weaviate)
