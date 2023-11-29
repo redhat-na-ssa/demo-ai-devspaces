@@ -5,7 +5,7 @@ projects:
   - name: datasci-keras-gpt2-nlp
     git:
       remotes:
-        origin: "https://github.com/redhat-na-ssa/demo-ocp-gpt2-keras-nlp.git"
+        origin: "https://github.com/redhat-na-ssa/datasci-keras-gpt2-nlp.git"
       checkoutFrom:
         revision: main
   - name: datasci-computer-vision
@@ -17,7 +17,7 @@ projects:
   - name: datasci-fingerprint
     git:
       remotes:
-        origin: "https://github.com/redhat-na-ssa/datasci-fingerprint"
+        origin: "https://github.com/redhat-na-ssa/datasci-fingerprint.git"
       checkoutFrom:
         revision: main
 components:
