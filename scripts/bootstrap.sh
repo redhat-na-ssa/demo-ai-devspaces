@@ -41,7 +41,7 @@ is_sourced() {
   return 1  # NOT sourced.
 }
 
-################# misc fucntions ################
+################# misc functions ################
 
 ocp_check_login(){
   oc whoami || return 1
@@ -116,7 +116,7 @@ setup_demo(){
 }
 
 delete_demo(){
-  echo "WARNING: This will remove operators and other compoents!"
+  echo "WARNING: This will remove operators and other components!"
   echo "WARNING: Manually clean up on a cluster that is not a default install"
   echo "Hit <CTRL> + C to abort"
   sleep "${SLEEP_SECONDS:-8}"
