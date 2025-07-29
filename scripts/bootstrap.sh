@@ -79,7 +79,7 @@ until_true(){
 check_cluster_version(){
   OCP_VERSION=$(oc version | sed -n '/Server Version: / s/Server Version: //p')
   AVOID_VERSIONS=()
-  TESTED_VERSIONS=("4.12.12" "4.12.33" "4.13.13")
+  TESTED_VERSIONS=("4.12.12" "4.12.33" "4.13.13" "4.18.20")
 
   echo "Current OCP version: ${OCP_VERSION}"
   echo "Tested OCP version(s): ${TESTED_VERSIONS[*]}"
