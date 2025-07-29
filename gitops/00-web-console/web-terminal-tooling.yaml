@@ -1,0 +1,40 @@
+apiVersion: workspace.devfile.io/v1alpha2
+kind: DevWorkspaceTemplate
+metadata:
+  annotations:
+    controller.devfile.io/allow-import-from: '*'
+    web-terminal.redhat.com/unmanaged-state: 'true'
+  name: web-terminal-tooling
+  namespace: openshift-operators
+  labels:
+    console.openshift.io/terminal: 'true'
+spec:
+  components:
+    - container:
+        args:
+          - "/bin/bash"
+          - "-c"
+          - |
+            #!/bin/bash
+
+            echo "
+            GIT_REPO=https://github.com/redhat-na-ssa/demo-ai-devspaces.git
+            GIT_DIR=demo-ai-devspaces
+
+            [ -e ~/\${GIT_DIR} ] || git clone \${GIT_REPO}
+            [ -e ~/\${GIT_DIR} ] && cd ~/\${GIT_DIR}
+
+            " >> /home/user/.bashrc
+
+            . /home/user/.bashrc
+
+            sleep infinity  # just in case
+
+        cpuLimit: 400m
+        cpuRequest: 100m
+        image: ghcr.io/redhat-na-ssa/web-terminal-tooling:latest
+        memoryLimit: 512Mi
+        memoryRequest: 128Mi
+        mountSources: false
+        sourceMapping: /projects
+      name: web-terminal-tooling

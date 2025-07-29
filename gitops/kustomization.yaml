@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
   # - 00-operators
   # - 01-operator-configs
-  - 02-components
+  - 03-components
   - demo-devspaces-nvidia-gpu-autoscale
 
 patches:
