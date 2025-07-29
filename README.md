@@ -28,17 +28,6 @@ The following icon should appear in the top right of the OpenShift web console a
 
 ![Web Terminal](docs/images/web-terminal.png "Web Terminal")
 
-### Tools
-
-The following cli tools are required:
-
-- `bash`, `git`
-- `oc` - Download [mac](https://formulae.brew.sh/formula/openshift-cli), [linux](https://mirror.openshift.com/pub/openshift-v4/clients/ocp), [windows](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/openshift-client-windows.zip)
-- `kubectl` (optional) - Included in `oc` bundle
-- `kustomize` (optional) - Download [mac](https://formulae.brew.sh/formula/kustomize), [linux](https://github.com/kubernetes-sigs/kustomize/releases)
-
-NOTE: `bash`, `git`, and `oc` are available in the [OpenShift Web Terminal](https://docs.openshift.com/container-platform/4.12/web_console/web_terminal/installing-web-terminal.html)
-
 ### From a terminal
 
 ```sh
@@ -74,7 +63,7 @@ cd demo-ai-devspaces
 delete_demo
 ```
 
-## Quickstart
+## Walkthrough
 
 - Launch DevSpaces from the waffle menu on the OCP Web Console
 
@@ -95,6 +84,19 @@ delete_demo
 ![DevSpaces Example](docs/images/devspaces-1.png)
 
 ## Additional Resources
+
+### Tools
+
+The following cli tools are required:
+
+- `bash`, `git`
+- `oc` - Download [mac](https://formulae.brew.sh/formula/openshift-cli), [linux](https://mirror.openshift.com/pub/openshift-v4/clients/ocp), [windows](https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/openshift-client-windows.zip)
+- `kubectl` (optional) - Included in `oc` bundle
+- `kustomize` (optional) - Download [mac](https://formulae.brew.sh/formula/kustomize), [linux](https://github.com/kubernetes-sigs/kustomize/releases)
+
+NOTE: `bash`, `git`, and `oc` are available in the [OpenShift Web Terminal](https://docs.openshift.com/container-platform/4.12/web_console/web_terminal/installing-web-terminal.html)
+
+### Links
 
 OpenShift Dev Spaces
 
