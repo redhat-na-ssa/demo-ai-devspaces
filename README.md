@@ -6,8 +6,29 @@ This repo demos helps show the value of OpenShift and OpenShift Dev Spaces as a 
 
 ### Prerequisites
 
-- [x] Red Hat OpenShift Cluster 4.10+
+- [x] Red Hat OpenShift Cluster 4.16+
 - [x] Cluster admin permissions
+
+[Red Hat Demo Platform](https://demo.redhat.com) Options (Tested)
+
+NOTE: The node sizes below are the **recommended minimum** to select for provisioning
+
+- <a href="https://demo.redhat.com/catalog?item=babylon-catalog-prod/sandboxes-gpte.sandbox-ocp.prod&utm_source=webapp&utm_medium=share-link" target="_blank">AWS with OpenShift Open Environment</a>
+  - 1 x Control Plane - `m6a.2xlarge`
+  - 0 x Workers - `m6a.2xlarge`
+- <a href="https://demo.redhat.com/catalog?item=babylon-catalog-prod/sandboxes-gpte.ocp4-single-node.prod&utm_source=webapp&utm_medium=share-link" target="_blank">One Node OpenShift</a>
+  - 1 x Control Plane - `m6a.2xlarge`
+- <a href="https://demo.redhat.com/catalog?item=babylon-catalog-prod/community-content.com-mlops-wksp.prod&utm_source=webapp&utm_medium=share-link" target="_blank">MLOps Demo: Data Science & Edge Practice</a>
+
+## Getting Started
+
+### Install the [OpenShift Web Terminal](https://docs.openshift.com/container-platform/4.12/web_console/web_terminal/installing-web-terminal.html)
+
+The following icon should appear in the top right of the OpenShift web console after you have installed the operator. Clicking this icon launches the web terminal.
+
+![Web Terminal](docs/images/web-terminal.png "Web Terminal")
+
+### Tools
 
 The following cli tools are required:
 
@@ -20,15 +41,16 @@ NOTE: `bash`, `git`, and `oc` are available in the [OpenShift Web Terminal](http
 
 ### From a terminal
 
-```
+```sh
 # start in a bash shell
 # (this means you mac users; zsh)
-bash
 
 # oc login to your cluster
 # oc login --token=<yours> --server=https://<yours>
 oc whoami
+```
 
+```sh
 # git clone demo
 git clone https://github.com/redhat-na-ssa/demo-ai-devspaces.git
 cd demo-ai-devspaces
@@ -45,7 +67,7 @@ cd demo-ai-devspaces
 
 ### Uninstall
 
-```
+```sh
 # WARNING: Be certain you want your cluster returned to a vanilla state
 . ./scripts/bootstrap.sh
 
