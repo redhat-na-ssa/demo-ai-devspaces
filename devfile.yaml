@@ -28,10 +28,6 @@ components:
     name: universal-developer-image
     attributes:
       container-overrides:
-        tolerations:
-          - effect: NoSchedule
-            key: nvidia.com/gpu
-            operator: Exists
         resources:
           limits:
             memory: 48Gi # you can edit this live
