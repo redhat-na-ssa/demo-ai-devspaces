@@ -40,6 +40,10 @@ components:
       volumeMounts:
         - name: venv
           path: /home/user/.venv
+      tolerations:
+      - effect: NoSchedule
+        key: nvidia.com/gpu
+        operator: Exists
   - name: venv
     volume:
       size: 1G
