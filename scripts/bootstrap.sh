@@ -127,9 +127,9 @@ delete_demo(){
   oc delete --wait -l operators.coreos.com/devspaces.openshift-operators csv -A
 
   # standard demo uninstall
-  oc delete --wait -k gitops/02-components
-  oc delete --wait -k gitops/01-operator-configs
-  oc delete --wait -k gitops/00-operators
+  oc delete --wait -k gitops/03-components
+  oc delete --wait -k gitops/02-operator-configs
+  oc delete --wait -k gitops/01-operators
   oc delete --wait -k gitops
 }
 
