@@ -6,7 +6,7 @@ This repo demos helps show the value of OpenShift and OpenShift Dev Spaces as a 
 
 ### Prerequisites
 
-- [x] Red Hat OpenShift Cluster 4.16+
+- [x] Red Hat OpenShift Cluster 4.18+
 - [x] Cluster admin permissions
 
 [Red Hat Demo Platform](https://demo.redhat.com) Options (Tested)
