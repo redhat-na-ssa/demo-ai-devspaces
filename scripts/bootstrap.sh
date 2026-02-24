@@ -41,7 +41,7 @@ is_sourced() {
   return 1  # NOT sourced.
 }
 
-################# misc fucntions ################
+################# misc functions ################
 
 ocp_check_login(){
   oc whoami || return 1
@@ -79,7 +79,7 @@ until_true(){
 check_cluster_version(){
   OCP_VERSION=$(oc version | sed -n '/Server Version: / s/Server Version: //p')
   AVOID_VERSIONS=()
-  TESTED_VERSIONS=("4.12.12" "4.12.33" "4.13.13")
+  TESTED_VERSIONS=("4.12.12" "4.12.33" "4.13.13" "4.18.20")
 
   echo "Current OCP version: ${OCP_VERSION}"
   echo "Tested OCP version(s): ${TESTED_VERSIONS[*]}"
@@ -116,7 +116,7 @@ setup_demo(){
 }
 
 delete_demo(){
-  echo "WARNING: This will remove operators and other compoents!"
+  echo "WARNING: This will remove operators and other components!"
   echo "WARNING: Manually clean up on a cluster that is not a default install"
   echo "Hit <CTRL> + C to abort"
   sleep "${SLEEP_SECONDS:-8}"
@@ -127,9 +127,9 @@ delete_demo(){
   oc delete --wait -l operators.coreos.com/devspaces.openshift-operators csv -A
 
   # standard demo uninstall
-  oc delete --wait -k gitops/02-components
-  oc delete --wait -k gitops/01-operator-configs
-  oc delete --wait -k gitops/00-operators
+  oc delete --wait -k gitops/03-components
+  oc delete --wait -k gitops/02-operator-configs
+  oc delete --wait -k gitops/01-operators
   oc delete --wait -k gitops
 }
 
